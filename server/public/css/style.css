@@ -1,0 +1,35 @@
+/*
+
+ */
+
+div .container.head-container {
+    margin-top: 50px;
+}
+
+.item-img {
+    max-width: 110%;
+    padding-top: 1.5em;
+    padding-left: 1.5em;
+}
+
+.help-block {
+    color: red;
+}
+
+#feedLoading {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    text-shadow: 2px 2px 2px #021124;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 768px) { /* when mid side, make image centered*/
+    div .image-container {
+        display: block;
+        text-align: center;
+    }
+}

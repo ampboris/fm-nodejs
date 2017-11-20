@@ -1,0 +1,42 @@
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">FM LAST Artists</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<toaster-container toaster-options="{'time-out': 1000}"></toaster-container>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="page-header">Login</h4>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form ng-submit="submit()" name="loginForm" novalidate>
+                        <div class="form-group">
+                            <label>Username</label>
+                            <input name="name" ng-model="data.form.name"
+                                   type="text" class="form-control" placeholder="Enter Username" required/>
+                            <p ng-show="(loginForm.name.$invalid && !loginForm.name.$pristine) || data.showFormError" class="help-block">You name is required.</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input ng-model="data.form.password"
+                                   name="password" type="password" class="form-control" placeholder="Enter Password" required/>
+                            <p ng-show="(loginForm.password.$invalid && !loginForm.password.$pristine) || data.showFormError" class="help-block">Password is required.</p>
+                        </div>
+
+                        <div class="pull-right">
+                            <button type="submit" class="btn btn-default btn-success">Login</button>
+                            <a ng-click="singUp()" class="btn btn-default btn-warning">Sign up</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
